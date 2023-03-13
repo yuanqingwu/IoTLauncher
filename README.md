@@ -12,5 +12,8 @@
 参考widget的设计，会让桌面的window内容带一些快捷操作以及状态显示，原生widget会限制使用特定的控件，并且是运行在系统进程，这些限制都是需要完善拓展的。
 
 
+- 借助Android freeform自由窗口机制实现
 
-最简单的实现方式，完全使用widget实现。
+通过 config_supportsMultiWindow 标志启用多窗口模式后，设备制造商可以允许启用自由窗口。此模式在较大的设备（例如平板电脑）上最为有用。
+
+如需支持自由窗口模式，请启用 /android/frameworks/base/core/java/android/content/pm/PackageManager.java 中的 PackageManager#FEATURE_FREEFORM_WINDOW_MANAGEMENT 系统功能，并在 config.xml. 中将 config_freeformWindowManagement 设置为 true。
