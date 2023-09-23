@@ -17,3 +17,8 @@
 通过 config_supportsMultiWindow 标志启用多窗口模式后，设备制造商可以允许启用自由窗口。此模式在较大的设备（例如平板电脑）上最为有用。
 
 如需支持自由窗口模式，请启用 /android/frameworks/base/core/java/android/content/pm/PackageManager.java 中的 PackageManager#FEATURE_FREEFORM_WINDOW_MANAGEMENT 系统功能，并在 config.xml. 中将 config_freeformWindowManagement 设置为 true。
+
+- 借助TaskView实现（android 12以上）
+参考CarLauncher实现。
+http://aospxref.com/android-13.0.0_r3/xref/packages/apps/Car/Launcher/src/com/android/car/carlauncher/CarLauncher.java
+http://aospxref.com/android-13.0.0_r3/xref/packages/apps/Car/Launcher/src/com/android/car/carlauncher/TaskViewManager.java
