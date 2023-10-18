@@ -22,3 +22,8 @@
 参考CarLauncher实现。
 http://aospxref.com/android-13.0.0_r3/xref/packages/apps/Car/Launcher/src/com/android/car/carlauncher/CarLauncher.java
 http://aospxref.com/android-13.0.0_r3/xref/packages/apps/Car/Launcher/src/com/android/car/carlauncher/TaskViewManager.java
+
+
+- activity嵌入（Android 12L（API 级别 32））
+  activity 嵌入无需重构代码。至于应用如何显示其 activity（是并排还是堆叠）时，可以通过创建 XML 配置文件或进行 Jetpack WindowManager API 调用来确定。
+  https://developer.android.google.cn/guide/topics/large-screens/activity-embedding?hl=zh-cn
